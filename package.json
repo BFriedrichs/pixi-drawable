@@ -1,0 +1,27 @@
+{
+  "name": "pixi-drawable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BFriedrichs/pixi-drawable.git"
+  },
+  "author": "Björn Friedrichs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BFriedrichs/pixi-drawable/issues"
+  },
+  "homepage": "https://github.com/BFriedrichs/pixi-drawable#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "browserify": "^13.1.1"
+  }
+}
