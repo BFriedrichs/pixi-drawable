@@ -1,14 +1,26 @@
 var p = require('./package.json')
 var gulp = require('gulp');
 
-var browserify = require('browserify');
-var uglify = require('gulp-uglify');
-var sourcemaps = require('gulp-sourcemaps');
-var source = require('vinyl-source-stream');
-var buffer = require('vinyl-buffer');
+var browserify = require('browserify'),
+    watch = require('gulp-watch'),
+    uglify = require('gulp-uglify'),
+    batch = require('gulp-batch'),
+    sourcemaps = require('gulp-sourcemaps'),
+    source = require('vinyl-source-stream'),
+    buffer = require('vinyl-buffer')
 
-gulp.task('default', ['dev', 'prod'], function() {
+gulp.task('default', ['build'], function() {
 
+});
+
+gulp.task('build', ['dev', 'prod'], function() {
+
+});
+
+gulp.task('watch', function() {
+  watch('./src/**/*.js', batch(function (events, done) {
+      gulp.start('build', done);
+  }));
 });
 
 gulp.task('dev', function() {
